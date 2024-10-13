@@ -8,7 +8,7 @@ Install zsh, tmux, plugins...
 
 Symlink .dofiles
 ===============
-ln -s ~/MyConfig/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s ~/MyConfig/dotfiles/zsh/.pk10k.zsh ~/.p10k.zsh
-ln -s ~/MyConfig/dotfiles/aliases/.alias ~/.alias
-ln -s ~/MyConfig/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/MyConfig/dotfiles/zsh/.zshrc ~/.zshrc\
+ln -s ~/MyConfig/dotfiles/zsh/.pk10k.zsh ~/.p10k.zsh\
+ln -s ~/MyConfig/dotfiles/aliases/.alias ~/.alias\
+ln -s ~/MyConfig/dotfiles/tmux.conf ~/.tmux.conf\
