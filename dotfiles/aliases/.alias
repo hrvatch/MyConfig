@@ -1,0 +1,4 @@
+alias a="cd /"
+alias b="cd /nvme_500G_A/"
+alias p="cd /nvme_500G_A/projects"
+
