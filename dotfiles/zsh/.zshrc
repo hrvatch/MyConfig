@@ -30,6 +30,16 @@ export PATH=$PATH:$HOME/.gem:$HOME/.gem/gems:$HOME/.gem/gems/bin
 export GEM_HOME=$HOME/.gem
 export GEM_PATH=$HOME/.gem
 
+# Eda tools paths
+# - Cadence Installscape
+export PATH=$PATH:/nvme_500G_A/eda/cadence/iscape/iscape/bin
+# - Cadence Xcelium, Specman
+export PATH=$PATH:/nvme_500G_A/eda/cadence/xcelium_24_03_001/tools/bin
+# - Cadence license
+export CDS_LIC_FILE=/nvme_500G_A/eda/cadence/license/license.dat
+# - Cadence JasperGold
+export PATH=$PATH:/nvme_500G_A/eda/cadence/jasper_2023.09/bin
+
 # =====================================================================================================================
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,

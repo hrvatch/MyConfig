@@ -7,6 +7,12 @@ vim.cmd("set shiftwidth=2")
 -- Turn on line numbers
 vim.cmd("set number")
 
+-- Disable mouse in Neovim
+vim.cmd("set mouse=")
+
+-- Disable line wrapping
+vim.cmd("set wrap!")
+
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 vim.g.mapleader = " "
