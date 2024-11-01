@@ -1,17 +1,15 @@
 -- Use tabs instead of spaces. Indent is two spaces
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
 
 -- Turn on line numbers
-vim.cmd("set number")
-
--- Disable mouse in Neovim
-vim.cmd("set mouse=")
+vim.opt.number = true
 
 -- Disable line wrapping
-vim.cmd("set wrap!")
+vim.opt.wrap = false
 
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
@@ -20,4 +18,3 @@ vim.g.maplocalleader = "\\"
 
 -- Lazy - plugin manager for Neovim
 require("config.lazy")
-

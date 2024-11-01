@@ -55,7 +55,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,13 +104,19 @@ export ARCHFLAGS="-arch $(uname -m)"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
 # Display time stamp in history
 HIST_STAMPS="%d/%b/%y %T"
+
+# Set the editor
+EDITOR='nvim'
+
+# Set up fzf key bindings
+source <(fzf --zsh)
 
 # =====================================================================================================================
 # Set ALIASes

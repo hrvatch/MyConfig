@@ -1,4 +1,6 @@
 alias a="cd /"
 alias b="cd /nvme_500G_A/"
 alias p="cd /nvme_500G_A/projects"
-
+alias ls="colorls"
+alias ll="ls -alh --group-directories-first"
+alias gdb="/usr/local/bin/gdb"
