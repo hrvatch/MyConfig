@@ -50,7 +50,17 @@ return {
         vim.keymap.set("n", "gr", vim.lsp.buf.references, bufopts)
         vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, bufopts)
       end
-
+      lspconfig.html.setup({
+        cmd = { 'vscode-html-language-server', '--stdio' },
+        filetypes = { 'html', 'templ' },
+        root_markers = { 'package.json', '.git' },
+        settings = {},
+        init_options = {
+          provideFormatter = true,
+          embeddedLanguages = { css = true, javascript = true },
+          configurationSection = { 'html', 'css', 'javascript' },
+        },
+      })
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
         on_attach = on_attach,

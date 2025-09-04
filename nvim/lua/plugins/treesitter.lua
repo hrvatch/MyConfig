@@ -5,18 +5,17 @@ return {
   config = function()
     local config = require("nvim-treesitter.configs")
     config.setup({
-      -- ensure_installed = {
-      --   "c",
-      --   "lua",
-      --   "vim",
-      --   "vimdoc",
-      --   "vhdl",
-      --   "systemverilog",
-      --   "cpp",
-      --   "javascript",
-      --   "html",
-      --   "bash",
-      -- },
+       ensure_installed = {
+         "c",
+         "lua",
+         "vim",
+         "vimdoc",
+         "vhdl",
+         "cpp",
+         "javascript",
+         "html",
+         "bash",
+       },
       auto_install = true,
       highlight = { enable = true },
       indent = { enable = true },

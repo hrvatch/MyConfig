@@ -1,6 +1,5 @@
 return {
 	"windwp/nvim-autopairs",
-	event = "InsertEnter",
 	config = function()
 		local npairs = require("nvim-autopairs")
 
@@ -16,5 +15,8 @@ return {
         text = false, -- don't check treesitter on text
 			},
 		})
+    -- Disable autopairing single quotes in systemverilog
+    local sv_rule = npairs.get_rules("'")[1]
+    sv_rule.not_filetypes = {"systemverilog"}
 	end,
 }
